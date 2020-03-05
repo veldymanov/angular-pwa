@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --proxy-config ./proxy.json --live-reload false",
+    "start:prod": "ng build --prod && cd dist && http-server -c-1 -P http://localhost:9000 .",
+    "server": "ts-node -P ./server/server.tsconfig.json ./server/server.ts",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -12,10 +14,12 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.3",
+    "@angular/cdk": "^9.1.1",
     "@angular/common": "~9.0.3",
     "@angular/compiler": "~9.0.3",
     "@angular/core": "~9.0.3",
     "@angular/forms": "~9.0.3",
+    "@angular/material": "^9.1.1",
     "@angular/platform-browser": "~9.0.3",
     "@angular/platform-browser-dynamic": "~9.0.3",
     "@angular/platform-server": "~9.0.3",
