@@ -12,8 +12,3 @@ copy the App
 
 ng add @angular/pwa
 ng g app-shell
-
-
-
-## Development server
-
