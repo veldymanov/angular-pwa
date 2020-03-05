@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.loading-indicator {
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
