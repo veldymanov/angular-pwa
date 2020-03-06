@@ -17,7 +17,7 @@ export class NewsletterService {
     return this.http.post('/api/notifications', sub);
   }
 
-  public send() {
-
+  public send(): Observable<any> {
+    return this.http.post('/api/newsletter', null);
   }
 }

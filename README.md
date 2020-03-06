@@ -20,4 +20,8 @@ ng g app-shell
 ### server side
 npm i -g web-push
 npm i web-push
+npm install --save-dev @types/web-push
 web-push generate-vapid-keys --json
+
+### client side
+chrome://settings/ -> Privacy and security -> Site Settings -> Notifications 
