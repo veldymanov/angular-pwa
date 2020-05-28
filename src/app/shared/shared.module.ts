@@ -24,8 +24,6 @@ const SHARED_MODULES = [
 
 const SHARED_COMPONENTS = [];
 
-const ENTRY_COMPONENTS = [];
-
 const SHARED_DIRECTIVES = [];
 
 const SHARED_PIPES = [];
@@ -56,13 +54,9 @@ const ANGULAR_MATERIAL_MODULES = [
     SHARED_MODULES,
   ],
   declarations: [
-    ENTRY_COMPONENTS,
     SHARED_COMPONENTS,
     SHARED_DIRECTIVES,
     SHARED_PIPES,
-  ],
-  entryComponents: [
-    ENTRY_COMPONENTS,
   ],
   exports: [
     ANGULAR_MATERIAL_MODULES,
@@ -73,4 +67,3 @@ const ANGULAR_MATERIAL_MODULES = [
   ]
 })
 export class SharedModule { }
-
